@@ -66,31 +66,24 @@ $(document).ready(function($) {
 
     if ($('.image-popup').length > 0) {
         $('.image-popup').magnificPopup({
-            type:'image',
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            tClose: 'Fechar',
+            tLoading: 'Carregando...',
             removalDelay: 300,
-            mainClass: 'mfp-fade',
-            overflowY: 'scroll'
+            gallery: {
+                enabled:true,
+                tPrev: 'Anterior',
+                tNext: 'Próxima',
+                tCounter: '%curr% de %total%'
+            }
         });
     }
-
-
-    $('.popup').magnificPopup({
-        delegate: 'a', // the selector for gallery item
-        type: 'image',
-        tClose: 'Fechar',
-        tLoading: 'Carregando...',
-        gallery: {
-            enabled:true,
-            tPrev: 'Anterior',
-            tNext: 'Próxima',
-            tCounter: '%curr% de %total%'
-        }
-    });
-
 
     if ($('.video-popup').length > 0) {
         $('.video-popup').magnificPopup({
             type:'iframe',
+            tClose: 'Fechar',
             removalDelay: 300,
             mainClass: 'mfp-fade',
             overflowY: 'scroll',
