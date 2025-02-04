@@ -908,11 +908,21 @@ ul.check-marks li:before {
   margin-top: 0;
 }
 
-.note {
+.note, .by {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
+  opacity: 0.6;
   font-size: 12px;
   margin: 5px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.box-by {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .half-bottom-margin {
@@ -3079,7 +3089,22 @@ form .status i {
   font-size: 18px;
 }
 
+.footer {
+  background-color: #000;
+  padding: 20px 0;
+}
+
 /* 6. Responsive */
+@media (min-width: 992px) {
+  .box-by {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+  .note, .by {
+    text-align: left;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   body {
     font-size: 12px;
