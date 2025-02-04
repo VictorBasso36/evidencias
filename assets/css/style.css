@@ -1906,6 +1906,7 @@ hr {
 }
 .logos .logo {
   padding-left: 20px;
+  padding-right: 57px;
 }
 .logos .logo a {
   display: inline-block;
@@ -1935,7 +1936,10 @@ hr {
 }
 .logos .owl-stage .owl-item {
   height: 100%;
-  display: table;
+  /* display: table; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logos .owl-stage .owl-item .logo {
   display: table-cell;
@@ -3438,9 +3442,9 @@ form .status i {
     padding: 10px 8px;
   }
 
-  .logos .owl-stage .owl-item .logo, .logos .owl-stage .owl-item {
+  /* .logos .owl-stage .owl-item .logo, .logos .owl-stage .owl-item {
     display: inline-block;
-  }
+  } */
 
   .logos .logo {
     padding-left: 0px;
