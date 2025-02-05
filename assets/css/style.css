@@ -3014,8 +3014,9 @@ form label {
 }
 form label.error {
   position: absolute;
-  bottom: -100%;
-  left: 0;
+  bottom: -16px;
+  left: 15px;
+  font-size: 12px;
 }
 form.inputs-underline input[type="text"], form.inputs-underline input[type="email"], form.inputs-underline input[type="date"], form.inputs-underline input[type="time"], form.inputs-underline input[type="search"], form.inputs-underline input[type="password"], form.inputs-underline input[type="number"], form.inputs-underline input[type="tel"], form.inputs-underline textarea.form-control {
   -webkit-appearance: none;

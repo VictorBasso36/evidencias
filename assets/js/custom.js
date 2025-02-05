@@ -135,6 +135,12 @@ $(document).ready(function($) {
         var form = $(this).closest("form");
         button.prepend("<div class='status'></div>");
         form.validate({
+            messages: {
+                name: "O campo Nome é obrigatório.",
+                email: "O campo E-mail é obrigatório.",
+                message: "O campo Mensagem é obrigatório"
+                
+            },
             submitHandler: function() {
                 $.post("assets/php/email.php", form.serialize(),  function(response) {
                     //console.log(response);
