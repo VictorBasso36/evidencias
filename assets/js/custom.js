@@ -142,7 +142,7 @@ $(document).ready(function($) {
                 
             },
             submitHandler: function() {
-                $.post("assets/php/email.php", form.serialize(),  function(response) {
+                $.post("./assets/php/email.php", form.serialize(),  function(response) {
                     //console.log(response);
                     //$('#form-subscribe .form-contact-status').html(response);
                     button.find(".status").append(response);
