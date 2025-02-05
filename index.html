@@ -25,8 +25,8 @@
 
 </head>
 
-<body class="has-loading-screen links-hover-effect" data-spy="scroll" data-target=".navigation">
-
+<!-- <body class="has-loading-screen links-hover-effect" data-spy="scroll" data-target=".navigation"> -->
+<body>
 <div class="page-wrapper" id="page-top">
     <a href="https://google.com" class="wpp-icon">
         <i class="social_whatsapp_circle"></i>
@@ -453,11 +453,12 @@
                                     <!--end col-md-12 -->
                                 </div>
                                 <!--end row -->
-                                <div class="form-group clearfix">
+                                <div class="form-group action-line">
+                                    <div class="status"></div>
+                                    <img class="loading" src="./assets/img/tube-spinner.svg" width="30px" height="30px"/>
                                     <button type="submit" class="btn pull-right btn-primary btn-rounded" id="form-contact-submit">Enviar</button>
                                 </div>
                                 <!--end form-group -->
-                                <div id="form-contact-status"></div>
                             </form>
                             <!--end form-contact -->
                         </div>
@@ -503,15 +504,5 @@
 <script type="text/javascript" src="./assets/js/scrollReveal.min.js"></script>
 <script type="text/javascript" src="./assets/js/readmore.min.js"></script>
 <script type="text/javascript" src="./assets/js/pace.min.js"></script>
-
-<script type="text/javascript" src="./assets/js/custom.js"></script>
-
-<script type="text/javascript">
-    var latitude = 34.038405;
-    var longitude = -117.946944;
-    var markerImage = "./assets/img/map-marker-w.png";
-    var mapTheme = "dark";
-    google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapTheme));
-</script>
-
+<script type="text/javascript" src="./assets/js/custom.js?v=124312"></script>
 </body>

@@ -2,8 +2,9 @@
 mb_internal_encoding("UTF-8");
 
 $to = 'frankrsouza@gmail.com';
-$subject = 'Message from Propper';
+$subject = 'Formulário LP Evidências';
 
+$body = "";
 $name = "";
 $email = "";
 $phone = "";
@@ -49,8 +50,8 @@ $headers = 'From: ' .$email . "\r\n";
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     mb_send_mail($to, $subject, $body, $headers);
-    echo '<div class="status-icon valid"><i class="icon_check"></i></div>';
+    echo '<div class="status-icon valid"><i class="icon_check"></i></div><span>Mensagem enviada com sucesso!</span>';
 }
 else{
-    echo '<div class="status-icon invalid"><i class="icon_close"></i></div>';
+    echo '<div class="status-icon invalid"><i class="icon_close"></i></div><span>Houve um erro ao enviar a mensagem.</span>';
 }
