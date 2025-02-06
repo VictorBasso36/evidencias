@@ -300,6 +300,7 @@ Headers:		'Montserrat', sans-serif;
   right: 40px;
   bottom: 40px;
   z-index: 9999;
+  padding-top: 3px;
 }
 .hero-section.blog-title {
   height: 400px !important;
@@ -2800,9 +2801,11 @@ hr {
   display: inline-block;
   position: relative;
   margin-bottom: 10px;
+  height: 275px;
 }
 .video-player img {
   object-fit: cover;
+  height: auto;
 }
 .video-player:hover .has-overlay:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
