@@ -1783,6 +1783,7 @@ hr {
 .owl-carousel .owl-item img {
   max-width: 100%;
   object-fit: cover;
+  height: auto;
 }
 .hover-effect:hover span .hover-element {
   -moz-transform: translateY(100%);
