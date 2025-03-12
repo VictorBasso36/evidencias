@@ -160,7 +160,7 @@ $("form .btn[type='submit']").on("click", function(){
 
             var formData = form.serialize() + '&siteName=' + encodeURIComponent(siteNameField);
 
-            $.post("http://localhost:5000/api/v1/lead", formData, function(response) {
+            $.post("https://email-queues.vercel.app/api/v1/lead", formData, function(response) {
                 status.append(response);
                 //form.addClass("submitted");
 
